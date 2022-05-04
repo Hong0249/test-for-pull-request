@@ -2,11 +2,12 @@ let users;
 
 class User {
 	static async injectDB(conn) {
-		users = await conn.db("my-database-name").collection("users")
+		users = await conn.db("VMS").collection("users")
 	}
 
 	static async Register(name, age, gender, room_number, contact_number, mysj_status, email, password) {
 		// TODO: Register name, age, gender, room_number, contact_number, mysj_status, email exists
+		
 
 		// TODO: Hash password
 

@@ -35,7 +35,7 @@ describe("User Account", () => {
 		expect(res).toBeFalsy()
         try{
             await User.login()
-        } catch(e){
+		} catch(e){
             expext(e).toMatch("invalid name and email")
         }
 	})
