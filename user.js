@@ -2,7 +2,7 @@ let users;
 
 class User {
 	static async injectDB(conn) {
-		users = await conn.db("my-database-name").collection("users")
+		users = await conn.db("vms").collection("users")
 	}
 
 	static async register(username, password) {
