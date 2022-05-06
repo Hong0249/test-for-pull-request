@@ -5,7 +5,7 @@ describe("User Account", () => {
 	let client;
 	beforeAll(async () => {
 		client = await MongoClient.connect(
-			"mongodb+srv://Group13:p%4055w0rd@cluster0.ft7ws.mongodb.net/vms?retryWrites=true&w=majority",
+			"my-mongodb+srv-connection-string",
 			{ useNewUrlParser: true },
 		);
 		User.injectDB(client);
