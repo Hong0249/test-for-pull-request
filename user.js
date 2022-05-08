@@ -2,12 +2,11 @@ let users;
 
 class User {
 	static async injectDB(conn) {
-		users = await conn.db("VMS").collection("users")
+		users = await conn.db("my-database-name").collection("users")
 	}
 
 	static async Register(name, age, gender, room_number, contact_number, mysj_status, email, password) {
 		// TODO: Register name, age, gender, room_number, contact_number, mysj_status, email exists
-		
 
 		// TODO: Hash password
 
@@ -24,11 +23,7 @@ class User {
 	}
 
 	static async Facilities_info(facilities_manager_name, location, max_num_of_visitor, facilities_manager_contact_number, email, password) {
-		// TODO: Check if facilitiesmanagername, location, max_num_of_visitor, facilities_manager_contact_number, email exists
 
-		// TODO: Validate password
-
-		// TODO: Save Facilities_info to database
         return
 	}
 }
